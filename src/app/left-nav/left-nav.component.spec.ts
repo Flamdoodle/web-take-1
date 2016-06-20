@@ -12,8 +12,6 @@ import {
 } from '@angular/core/testing';
 
 import { LeftNavComponent } from './left-nav.component';
-import { NavigationService} from '../navigation.service'
-
 
 describe('Component: LeftNav', () => {
   it('should create an instance', () => {
