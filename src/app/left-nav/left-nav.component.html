@@ -1,0 +1,8 @@
+<p>
+  left-nav works!
+</p>
+<ul>
+  <li *ngFor="#navItem of navItems">
+    <app-nav-item [glyphName]="navItem.glyphName" [navLabel]="navItem.navLabel"></app-nav-item>
+  </li>
+</ul>
