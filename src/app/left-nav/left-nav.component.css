@@ -1,11 +1,11 @@
 
 .border{
     width:150px;
-    border:2em;
+    border:1em;
     border-color:red;
     border-style:solid;
-    padding-left: 1em;
-    margin-left: 1em;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .coloredUl {

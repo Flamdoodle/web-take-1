@@ -6,10 +6,6 @@ export class NavigationService {
       getNavItems(): any[] {
         return [
           {
-            glyphName: "glyphicon glyphicon-menu-hamburger",
-            navLabel: "Hamburger"
-          },
-          {
             glyphName: "glyphicon glyphicon-scissors",
             navLabel: "Scissors"
           },
