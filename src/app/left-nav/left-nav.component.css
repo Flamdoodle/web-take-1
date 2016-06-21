@@ -1,5 +1,16 @@
 
 .border {
+    width: 150px;
+    border: 2pem;
+    border-color: red;
+    border-style: solid;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+
+.borderHidden {
+    width: 65px;
     border: 2pem;
     border-color: red;
     border-style: solid;
@@ -22,6 +33,5 @@
 
 .shortLi {
     overflow:hidden;
-    width: 40em;
-    height: 20em;
+    height: 20px;
 }
