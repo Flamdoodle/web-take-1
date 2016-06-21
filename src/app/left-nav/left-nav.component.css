@@ -1,20 +1,22 @@
 
 .border {
-    width: 150px;
+    width: 100px;
     border: 2pem;
     border-color: red;
     border-style: solid;
     padding-left: 1em;
+    padding-top: 1em;
     margin-left: 1em;
 }
 
 
 .borderHidden {
-    width: 65px;
+    width: 50px;
     border: 2pem;
     border-color: red;
     border-style: solid;
     padding-left: 1em;
+    padding-top: 1em;
     margin-left: 1em;
 }
 
@@ -23,12 +25,14 @@
     list-style: none;
     overflow:auto;
     height:auto;
-    padding-left: 1em;
+    padding-left: 0em;
 }
 
 .longLi {
-    overflow:auto;
+    overflow: hidden;
     height:auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .shortLi {
