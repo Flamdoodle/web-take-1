@@ -1,24 +1,28 @@
-.empty {
-list-style: none;
-}
 
 .border{
-    border: 2em;
-    width: 200em;
+    width:150px;
+    border:2em;
     border-color:red;
-    border-style: solid;
+    border-style:solid;
     padding-left: 1em;
+    margin-left: 1em;
 }
 
-.coleredUl {
+.coloredUl {
     color: darkblue;
     list-style: none;
     overflow:auto;
     height:auto;
     padding-left:1em;
+    padding-left: 1em;
 }
 
 .longLi {
     overflow:auto;
     height:auto;
+}
+.shortLi {
+    overflow:hidden;
+    width:40em;
+    height:20em;
 }
