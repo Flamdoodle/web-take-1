@@ -12,8 +12,14 @@ import { NavigationService } from '../navigation.service';
 })
 export class LeftNavComponent implements OnInit {
   navItems;
+  navStatus="longLi";
+
   constructor(ns: NavigationService) {
     this.navItems = ns.getNavItems();
+  }
+
+  onClick(event) {
+    this.navStatus= this.navStatus=="longLi" ? "shortLi" : "longLi";
   }
 
   ngOnInit() {
