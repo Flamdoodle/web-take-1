@@ -12,7 +12,7 @@ import { NavigationService } from '../navigation.service';
 })
 export class LeftNavComponent implements OnInit {
   navItems;
-  navStatus="longLi";
+  navStatus = "longLi";
   borderStatus="border";
 
   constructor(ns: NavigationService) {
