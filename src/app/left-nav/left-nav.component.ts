@@ -13,12 +13,15 @@ import { NavigationService } from '../navigation.service';
 export class LeftNavComponent implements OnInit {
   navItems;
   navStatus = "longLi";
+  borderStatus="border";
+
   constructor(ns: NavigationService) {
     this.navItems = ns.getNavItems();
   }
 
-  onClick($event){
-    this.navStatus = this.navStatus=="longLi" ? "shortLi" : "longLi";
+  onClick(event) {
+    this.navStatus= this.navStatus=="longLi" ? "shortLi" : "longLi";
+    this.borderStatus= this.borderStatus=="border" ? "borderHidden" : "border";
   }
 
   ngOnInit() {

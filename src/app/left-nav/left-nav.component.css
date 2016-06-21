@@ -1,11 +1,19 @@
+.border {
+    width: 150px;
+    border: 2pem;
+    border-color: red;
+    border-style: solid;
+    padding-left: 1em;
+    margin-left: 1em;
+}
 
-.border{
-    width:150px;
-    border:1em;
-    border-color:red;
-    border-style:solid;
-    padding-left: 0px;
-    margin-left: 0px;
+.borderHidden {
+    width: 65px;
+    border: 2pem;
+    border-color: red;
+    border-style: solid;
+    padding-left: 1em;
+    margin-left: 1em;
 }
 
 .coloredUl {
