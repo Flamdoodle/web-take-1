@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['nav-item.component.css']
 })
 export class NavItemComponent implements OnInit {
-  @Input() navLabel;
-  @Input() glyphName;
+  @Input() navLabel = '';
+  @Input() glyphName = '';
 
   constructor() {}
 
