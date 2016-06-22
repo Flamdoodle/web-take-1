@@ -5,7 +5,7 @@
 
   <ul class="coloredUl">
     <li [class]="navStatus" *ngFor=" let navItem of navItems">
-      <app-nav-item [glyphName]="navItem.glyphName" [navLabel]="navItem.navLabel"></app-nav-item>
+      <app-nav-item (change)="onVisibleChange($event)" [glyphName]="navItem.glyphName" [navLabel]="navItem.navLabel"></app-nav-item>
     </li>
   </ul>
 </div>

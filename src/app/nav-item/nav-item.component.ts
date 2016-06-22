@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   moduleId: module.id,
@@ -9,7 +10,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavItemComponent implements OnInit {
   @Input() navLabel = '';
   @Input() glyphName = '';
+  @Output() change = new EventEmitter();
 
+  navItemClicked(){
+    this.change.emit({currentlyShowing: this.navLabel});
+  }
   constructor() {}
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LeftNavComponent } from './left-nav/left-nav.component';
 import { ContentComponent } from './content/content.component';
 
@@ -11,4 +11,9 @@ import { ContentComponent } from './content/content.component';
 })
 export class WebstimateAppComponent {
   title = 'webstimate works!';
+  isShowing;
+  navItemClicked($event){
+    console.log($event);
+    this.isShowing = $event.currentlyShowing === "Scissors";
+  console.log(this.isShowing);}
 }

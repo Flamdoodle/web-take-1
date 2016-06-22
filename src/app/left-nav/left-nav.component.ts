@@ -18,6 +18,7 @@ export class LeftNavComponent implements OnInit {
   constructor(ns: NavigationService) {
     this.navItems = ns.getNavItems();
   }
+  onVisibleChange($event){console.log($event)};
 
   onClick(event) {
     this.navStatus= this.navStatus=="longLi" ? "shortLi" : "longLi";
