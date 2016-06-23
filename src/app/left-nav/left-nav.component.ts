@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NavItemComponent } from '../nav-item/nav-item.component';
 import { NavigationService } from '../navigation.service';
 
@@ -14,11 +14,15 @@ export class LeftNavComponent implements OnInit {
   navItems;
   navStatus = "longLi";
   borderStatus="border";
+  @Output() change = new EventEmitter();
 
   constructor(ns: NavigationService) {
     this.navItems = ns.getNavItems();
   }
-  onVisibleChange($event){console.log($event)};
+
+  onVisibleChange($event){
+    this.change.emit($event);
+  };
 
   onClick(event) {
     this.navStatus= this.navStatus=="longLi" ? "shortLi" : "longLi";

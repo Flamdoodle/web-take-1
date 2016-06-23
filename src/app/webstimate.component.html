@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-xs-2">
-        <app-left-nav (navItemClicked)="navItemClicked($event)"></app-left-nav>
+<!--        <app-left-nav (change)="onVisibleChange($event)" (navItemClicked)="navItemClicked($event)"></app-left-nav>
+-->        <app-left-nav (change)="navItemClicked($event)"> </app-left-nav>
     </div>
     <div class="col-xs-10">
         <app-content [isShowing]='isShowing'></app-content>

@@ -12,8 +12,9 @@ import { ContentComponent } from './content/content.component';
 export class WebstimateAppComponent {
   title = 'webstimate works!';
   isShowing;
+
   navItemClicked($event){
     console.log($event);
-    this.isShowing = $event.currentlyShowing === "Scissors";
-  console.log(this.isShowing);}
+    this.isShowing = $event.currentlyShowing == "Scissors";
+    console.log(this.isShowing);}
 }
